@@ -1,0 +1,231 @@
+	time{
+		font-size: 0.9em;
+		display: inline-block;
+width: 100%;
+	}
+
+
+	#kolumna_srodek{
+		padding-bottom:40px;
+	}
+
+
+#page1.pl h1, #page20.en h1{
+display:none;
+}
+
+
+#page1.pl, #page20.en{
+	#kolumna_srodek{
+padding-top:100px;
+
+}
+
+
+
+}
+
+
+#page{
+
+
+color: rgba(0,0,0,0.7);
+
+.pages-list li{
+
+
+// time{
+// 	padding-bottom:0px;
+// }
+
+
+	width:23.5%;
+	float:left;
+	margin-right:2%;
+	padding-bottom:30px;
+	border-bottom:1px solid #cacaca;
+	margin-bottom:70px;
+
+	&:nth-of-type(4n+4){
+		margin-right:0%;
+	}
+//wyglad pojedynczego segmentu
+		img{
+		width:100%;
+		transition:0.3s ease;
+	}
+
+	.image{
+		overflow:hidden;
+		&:hover{
+			img{
+				transform: scale(1.05);
+				opacity:0.8;
+			}
+		}
+	}
+
+	h2 a{
+		// color: #00c713;
+		color:black;
+		text-transform:uppercase;
+		transition:0.2s ease;
+		&:hover{
+			color:darken(#00C713, 8%);
+		}
+	}
+	h2{
+		margin:5px 0px;;
+	}
+	h2, time, .description{
+		padding:0px 10px;
+	}
+	.dalej{
+		text-align:center;
+		color: #1095da;
+		width: 100%;
+		display: inline-block;
+		margin-top:20px;
+		transition:0.2s ease;
+
+		&:hover{
+				color:#3B5998;
+
+		}
+	}
+
+
+.dalej:after{
+
+content: "...";
+opacity: 0;
+transition: all 0.3s ease 0s;
+position: relative;
+left: 2px;
+
+
+}
+
+.dalej:hover:after{
+left: 7px;
+opacity: 1;
+transition: all 0.3s ease 0s;
+
+}
+
+
+	.description{
+		padding-top: 10px;
+	}
+
+
+
+}
+
+.pages{
+
+
+display: inline-block;
+width: 100%;
+color:transparent;
+text-align:center;
+
+a{
+	color:#1095DA;
+	transition:0.2s ease;
+
+		&:hover{
+				color:#3B5998;
+
+		}
+}
+li{
+	color:black;
+	display:inline-block;
+	margin-right:15px;
+
+
+}
+
+
+
+}
+
+
+#kolumna_srodek{
+padding-left:20px;
+padding-right:20px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+// lista tagów
+
+
+
+
+
+#page4.pl, #page21.en{
+
+h1{
+	text-align: center;
+text-transform: uppercase;
+font-size: 3em;
+}
+
+
+}
+
+
+//lista wyszukiwania
+
+#page3.pl, #page23.en{
+
+h1{
+	text-align:center;
+}
+
+
+
+
+}
+
+
+
+//stylowanie wyrownanych pozycji
+.dalej{
+	position: absolute;
+bottom: 30px;
+}
+
+.pages-list li{
+	position:relative;
+}
+
+.pages-list .description{
+	margin-bottom: 40px;
+}
+
+
+// wysyokosc na sztywno
+
+.pages-list li{
+	// height:530px;
+}
+
+
+
+// fix na blad z tagami
+
+.usun .pages-list li:nth-last-of-type(1){
+	display:none;
+}

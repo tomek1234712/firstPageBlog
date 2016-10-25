@@ -1,0 +1,16 @@
+/*ie9 i ie10*/
+@media screen and (min-width:0\0) {
+
+
+/*regułki*/
+
+}
+
+/*ALE NIE IE11*/
+
+ _:-ms-fullscreen, :root #preloader {
+	
+/*wysłcz wyższa regułkę*/
+
+ }
+ 

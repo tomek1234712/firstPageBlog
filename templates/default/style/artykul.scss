@@ -1,0 +1,49 @@
+.breadcrumb, .content{
+	a{
+		color: #1095DA;
+		transition:0.2s ease;
+		&:hover{
+				color:#3B5998;
+
+		}
+	}
+}
+
+.images-2{
+	float:right;
+		padding-left: 20px;
+		padding-top: 7px;
+
+}
+
+.images-1{
+	float:left;
+	padding-right: 20px;
+	padding-top: 7px;
+}
+
+time{
+
+    padding-bottom: 5px;
+}
+
+//galeria 1 i galeria 2
+
+.images-3, .images-4{
+
+	text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+a{
+	// cursor:default;
+}
+
+}
+
+
+
+.images-1, .images-2, .images-3, .images-4, .images-5{
+	li{
+		list-style:none;
+	}
+}

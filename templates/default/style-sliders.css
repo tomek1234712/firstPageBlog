@@ -1,0 +1,68 @@
+/* Quick.Cms.Ext v6.x slider stylesheet */
+/* Quick.Slider */
+
+/* GLOBAL */
+.quick-slider{position:relative;margin:auto;overflow:hidden;}
+.quick-slider ul{padding:0;margin:0;list-style:none;}
+.quick-slider-slide{position:absolute;left:0;top:0;width:100%;display:none;text-align:left;overflow:hidden;line-height:0;}
+.quick-slider-slide:first-child{display:block;}
+.quick-slider-nav-arrows{z-index:5;position:absolute;float:right;display:block;margin:0 0 -20px;padding:5px 10px;border:1px solid #fff;color:#fff;text-decoration:none;background:rgba(0,0,0,0.4);transition:all 0.3s ease;}
+.quick-slider-nav-arrows:hover{color:#000;text-decoration:none;border:1px solid #000;background:rgba(255,255,255,0.4);}
+.quick-slider-nav-arrows-next{right:20px;}
+.quick-slider-nav-arrows-prev{left:20px;}
+.quick-slider-nav-arrows-next:before{content:" >";}
+.quick-slider-nav-arrows-prev:before{content:"< ";}
+.quick-slider-nav-dots-wrapper{position:absolute;bottom:20px;width:100%;list-style:none;}
+.quick-slider-nav-dots{float:left;width:14px;height:14px;margin:0 12px 0 0;background:rgba(0,0,0,0.4);border:1px solid #666;color:transparent;}
+.quick-slider-nav-dots.active, .quick-slider-nav-dots:hover{background:#fff;transition:all 0.3s ease;color:transparent;}
+.quick-slider-slide .description{z-index:3;position:absolute;padding:10px;background:rgba(0,0,0,0.3);line-height:1.25em;color:#fff;}
+.quick-slider-slide .description a{color:inherit;}
+.quick-slider-slide .description a:hover{text-decoration:none;}
+
+/* CUSTOM - TOP SLIDER */
+#slider-1{position:relative;clear:both;/*display:none;*/height:261px;overflow:hidden;color:#fff;/*border-top:1px solid #eaeaea;*/} /* height:300px; is default height, so page will not change its height after slider is loaded, so you should change it if your slider has different height */
+#slider-1 li.no-img{min-height:300px;}
+#slider-1 .quick-slider-nav-arrows{top:50%;transform:translateY(-50%);min-height:60px;height:40%;margin:0;padding:0 10px;border:0;opacity:0.5;}
+#slider-1 .quick-slider-nav-arrows:hover{opacity:0.6;background:#000;}
+#slider-1 .quick-slider-nav-arrows:before{content:"";display:block;position:relative;top:50%;transform:translateY(-50%);width:32px;height:32px;background:url('img/arrows.png') no-repeat 0 0;}
+#slider-1 .quick-slider-nav-arrows-prev:before{background-position:0 -32px;}
+#slider-1 .quick-slider-nav-arrows-next{right:0;}
+#slider-1 .quick-slider-nav-arrows-prev{left:0;}
+#slider-1 .quick-slider-nav-dots-wrapper{left:80px;}
+#slider-1 .quick-slider-slide .description{top:10px;left:80px;min-width:150px;width:35%;margin-top:10px;}
+/* slide with specified ID */
+#slider-1 .slide3{background:#007ebb;}
+
+/* CUSTOM - WIDGET SLIDER */
+.widget.type-3 .slider{position:relative;clear:both;display:none;overflow:hidden;color:#fff;text-align:center;}
+.widget.type-3 .slider li.no-img{min-height:150px;}
+.widget.type-3 .slider .quick-slider-nav-arrows{bottom:50px;}
+.widget.type-3 .slider .quick-slider-nav-dots-wrapper{left:0;bottom:10px;margin:0 auto;text-align:center;}
+.widget.type-3 .slider .quick-slider-nav-dots-wrapper li{display:inline-block;}
+.widget.type-3 .slider .quick-slider-slide .description{top:0;left:0;width:100%;font-size:0.875em;}
+#content .widget.type-3 li img{box-shadow:none;}
+#content .widget.type-3 li img:hover{opacity:1;}
+/* subpages slider */
+.widget .pages-slider li{line-height:1.25em;color:#333;} /* you can also set height here */
+.widget .pages-slider .image{float:left;min-width:210px;width:39%;}
+.widget .pages-slider .name{float:left;min-width:250px;width:60%;padding-bottom:10px;font-size:1.25em;}
+.widget .pages-slider time{float:left;min-width:250px;width:60%;padding-bottom:10px;}
+.widget .pages-slider .slider-description{float:left;min-width:300px;width:55%;color:#000;}
+.widget .pages-slider li.no-img .slider-description{width:100%;}
+.widget .slider .quick-slider-nav-dots-wrapper{right:0;top:0;width:auto;}
+.widget .slider .quick-slider-nav-dots-wrapper li{display:inline-block;}
+.widgets-2 .type-6 .slider.quick-slider{overflow:visible}
+.widgets-2 .type-6 .slider .quick-slider-slide{overflow:visible;}
+#content .widget.type-6 li img{box-shadow:none;}
+
+@media print{
+  /* PRINT STYLES */
+  #slider-1, .quick-slider img, .quick-slider-nav-arrows, .quick-slider-nav-dots{display:none;}
+}
+
+/* RESPONSIVE WEB DESIGN - media queries */
+@media screen and (max-height:400px){
+  #slider-1{max-height:200px;}
+}
+
+/* PLUGINS */

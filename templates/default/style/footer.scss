@@ -1,0 +1,130 @@
+#powered{
+	background-color: #181818;
+	color:rgba(255,255,255,0.9);
+
+	.zawartosc{
+padding-top:20px;
+padding-bottom:20px;
+}
+
+
+//ustawienia polozenia
+
+#mailer{
+	float:left;
+	width:50%;
+}
+#stopki{
+		float:left;
+	width:50%;
+	text-align: right;
+}
+
+
+//newsletter
+
+.newsletter{
+	button{
+
+background-color: transparent;
+border: none;
+img{
+	height: 30px;
+}
+
+	}
+
+.add{
+	width: 50%;
+float: left;
+}
+
+
+input{
+	background-color:transparent;
+	border:none;
+	border-bottom:1px solid rgba(255,255,255,0.9);
+	width:95%;
+	padding:5px;
+	color:rgba(255,255,255,0.9);
+}
+
+							$szary:gray;
+							::-webkit-input-placeholder {
+							   color: $szary;
+							}
+
+							:-moz-placeholder { /* Firefox 18- */
+							   color: $szary;  
+							}
+
+							::-moz-placeholder {  /* Firefox 19+ */
+							   color: $szary;  
+							}
+
+							:-ms-input-placeholder {  
+							   color: $szary;  
+							}
+
+.description{
+	margin-bottom: 15px;
+	font-size: 1.2em;
+}
+
+}
+
+//tekst w stopce
+
+#stopki{
+	a{
+		color:#1095DA;
+	}
+
+font-size:0.8em;
+
+#cms, #realizacja{
+	// display: inline-block;
+}
+
+
+
+}
+
+
+
+#realizacja, #cms{
+	display:inline-block;
+}
+
+#cms{
+	padding-left:10px;
+}
+
+
+#stopki{
+padding-top: 25px;
+font-size: 0.7em;}
+
+}
+
+
+
+
+/////////////////////////////////
+
+.newsletter .save{
+	float:left;
+}
+
+
+.newsletter .save .ok, .newsletter .save .error{
+	height:35px;
+}
+
+.ok, .error{
+	cursor:pointer;
+}
+
+.info{
+padding-top: 8px;
+}

@@ -1,0 +1,146 @@
+/* Quick.Cms.Ext v6.x slider stylesheet */
+/* WIDGETS
+  to style widgets in specific location use:
+  .widgets-1 ... - type: top header
+  .widgets-2 ... - type: header below menu
+  .widgets-3 ... - type: footer after content
+  #content ... - type: inside page content
+*/
+
+/* GLOBAL */
+.widgets-1{position:relative;width:1200px;margin:10px auto;text-align:left;overflow:hidden;}
+.widgets-1 > ul > li{float:left;margin:10px 0;color:#333;}
+.widgets-1 div.head{margin-bottom:10px;text-align:center;font-size:1em;color:#cc1426;}
+.widgets-2 > ul, .widgets-2 > ul > li, .widgets-3 > ul, .widgets-3 > ul > li, #content .widget{padding:10px 1%;}
+.widget div.head{margin-bottom:10px;text-align:center;font-size:1.25em;text-transform:uppercase;color:#cc1426;}
+.widgets-1 > ul, .widgets-2 > ul, .widgets-3 > ul{float:left;width:100%;list-style:none;}
+.widget > div.description{padding-bottom:5px;}
+.widget ul{list-style:none;}
+
+/* TYPE: HEADER|FOOTER - GLOBAL */
+.widgets-2 > ul > li, .widgets-3 > ul > li{float:left;margin:10px 1%;border-top:5px solid #e8eaee;}
+
+/* INSIDE PAGE CONTENT - GLOBAL */
+#content .widget{float:left;margin:10px 1%;}
+
+/* Display option: CONTENT */
+.widget.type-1{width:31.3%;}
+#content .widget.type-1{border:1px solid #e8eaee;border-top-width:5px;}
+.widget.type-1 ul, .widget.type-1 ol{padding:0 0 0 30px;overflow:hidden;}
+.widget.type-1 li{margin:5px 0;padding:0;border-left:0;}
+.widget.type-1 p{padding-bottom:7px;}
+
+/* Display option: PAGE */
+.widget.type-2{width:31.3%;}
+.widget.type-2 img{float:left;margin:4px 15px 7px 0;box-shadow:0 0 4px rgba(100,100,100,0.4);}
+.widget.type-2 img:hover{opacity:0.8;}
+.widget.type-2 div.name{font-size:1.188em;}
+.widget.type-2 div.name a{text-decoration:none;}
+.widget.type-2 time{display:block;padding-top:5px;color:#6e6e6e;}
+.widget.type-2 div.description{margin-top:6px;text-align:justify;font-size:0.875em;}
+#content .widget.type-2{width:31.3%;border:1px solid #e8eaee;border-top-width:5px;}
+
+/* Display option: SLIDER
+   slider styles in style-slider.css file */
+.widget.type-3, .widget.type-6{width:48%;padding-left:0;padding-right:0;}
+
+/* Display option: MENU */
+.widget.type-4{width:31.3%;}
+.widget.type-4 nav ul{list-style:none;}
+.widget.type-4 nav > ul > li{padding:4px 0 4px 22px;background:url('img/list.png') no-repeat 0px 8px;font-size:1.188em;}
+.widget.type-4 nav > ul > li a{text-decoration:none;}
+.widget.type-4 nav > ul > li ul{margin-left:3px;font-size:0.895em;}
+.widget.type-4 nav > ul > li li{padding-top:2px;}
+.widget.type-4 nav > ul > li li:before{content:'>';margin-right:7px;font-size:0.824em;color:#cc1426;font-weight:bold;}
+#content .widget.type-4{width:31.3%;border:1px solid #e8eaee;border-top-width:5px;}
+
+/* Display option: SUBPAGES
+   other subpages styles you will find in style.css file in SUBPAGES LIST STYLES section
+   just move it here and add .widgets-2 to create custom version */
+.widget.type-5{width:48%;}
+.widget.type-5 .pages-list.no-type p{font-size:0.875em;}
+#content #page div.content .pages-list.no-type{padding:0;}
+.widget.type-5 .pages-5 li{width:30%;margin:10px 1%;padding:10px 0.5%;border:0;text-align:center;}
+.widget.type-5 .pages-5 li:nth-child(4n+1){clear:none;}
+.widget.type-5 .pages-5 li:nth-child(3n+1){clear:left;}
+.widget.type-5 .pages-5 .description{text-align:left;font-size:0.875em;}
+
+@media print{
+  /* PRINT STYLES */
+  .widgets-1{position:static;width:17.2cm;height:auto;margin:0;overflow:visible;}
+}
+
+/* RESPONSIVE WEB DESIGN - media queries */
+@media screen and (max-width:480px){
+  .widget[class*='type-']{width:98%;}
+}
+
+/* PLUGINS */
+
+/* Display option: NEWSLETTER */
+.widget.type-12{width:31.3%;text-align:center;}
+.widget.type-12 .default{display:none;}
+.widget.type-12 legend{width:100%;font-size:1.25em;text-transform:uppercase;color:#cc1426;text-align:center;}
+.widget.type-12 label{display:block;margin-top:7px;}
+.widget.type-12 input[type="email"]{width:85%;margin:10px auto;padding:2% 3%;text-align:center;}
+.widget.type-12 input[type="submit"]{padding:2% 5%;}
+.widget.type-12 .msg.done{font-size:1.125em}
+.widget.type-12 .msg.error{background-position:10px center;font-size:1em;}
+@media screen and (max-width:460px){
+  .widget.type-12{width:98%;}
+}
+
+/* Display option: TAGS */
+.widget.type-23{width:31.3%;}
+.widget.type-23 ul{list-style:none;}
+.widget.type-23 li{float:left;margin:0 15px 4px 0;}
+.widget.type-23 li a{padding-left:20px;background:url('img/tag.png') no-repeat 0px 2px;}
+.widget.type-23 li a:hover{color:#cc1426;}
+@media screen and (max-width:900px){
+  .widget.type-23{width:48%;}
+}
+@media screen and (max-width:460px){
+  .widget.type-23{width:98%;}
+}
+
+/* Display option: NOTICES */
+.widget.type-10{display:none;padding:7px 0;background:#fff;font-size:0.75em;}
+.widget.type-10 .close a{padding:5px 7px;font-weight:normal;text-decoration:none;background:#0093dd;color:#fff;}
+.widget.type-10 .close a:hover{background:#00679a;}
+.widget.type-10.location-0 .head, .widget.type-10.location-3 .head{margin-bottom:7px;font-weight:bold;font-size:1.167em;}
+.widget.type-10.location-1 div, .widget.type-10.location-2 div{display:inline-block;margin-right:4px;}
+.widget.type-10.location-1 .head, .widget.type-10.location-2 .head{margin-right:10px;font-weight:bold;}
+.widget.type-10.location-2{border-bottom:1px solid #555;}
+.widget.type-10.location-1, .widget.type-10.location-2, .widget.type-10.location-0{position:fixed;z-index:2;width:100%;background-color:rgba(255,255,255,0.9);}
+.widget.type-10.location-2{top:0px;}
+.widget.type-10.location-1{bottom:0px;border-top:1px solid #555;}
+.widget.type-10.location-0{width:200px;left:0px;bottom:0px;padding:10px;border:1px solid #bbb;}
+.widget.type-10.location-3{position:fixed;top:100px;left:50%;z-index:1001;width:700px;margin-left:-350px;padding:30px;text-align:center;background:#fff;border:5px solid #fff;border-radius:10px;}
+.widget.type-10.location-1 .close, .widget.type-10.location-2 .close{margin-left:20px;}
+.widget.type-10.location-0 .close, .widget.type-10.location-3 .close{margin-top:15px;}
+.widget-dark-background{display:none;position:fixed;width:100%;height:100%;left:0px;top:0px;background:rgba( 0, 0, 0, 0.7 );z-index:1000;}
+/* Display option: CONTACT PANEL
+   other subpages styles you will find in style.css file in CONTACT-PANEL section
+   just move it here and add .widgets-1 to create custom version */
+.type-7{width:48%;}
+.type-7 div.head, #content .widget.type-7 div.head{text-transform:none;}
+@media screen and (max-width:899px){
+  .type-7{width:98%;}
+}
+
+/* SCROLL BACK TO TOP */
+.back-to-top-widget{position:fixed;bottom:30px;right:1.5%;}
+.back-to-top-widget a{display:block;width:80px;text-align:center;color:#666;text-transform:uppercase;text-decoration:none;transition:1s;opacity:0.6;}
+.back-to-top-widget a:hover{opacity:1;color:#0093dd;text-decoration:none;}
+.back-to-top-widget a:before{content:'';display:block;width:100%;height:90px;margin-bottom:7px;background:#607380 url('img/back_to_top.png') no-repeat center center;border-radius:15px;transition:1s;}
+.back-to-top-widget a:hover:before{background-color:#0093dd;}
+@media screen and (max-width:1280px){
+  .back-to-top-widget{right:0.5%;}
+  .back-to-top-widget a{opacity:0.3;}
+}
+@media screen and (max-width:800px){
+  .back-to-top-widget a{width:40px;}
+  .back-to-top-widget a:before{height:40px;border-radius:22px;background-position:center top;border:2px solid #607380;}
+  .back-to-top-widget a:hover:before{border-color:#0093dd;}
+  .back-to-top-widget .description{display:none;}
+}

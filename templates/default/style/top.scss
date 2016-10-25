@@ -1,0 +1,292 @@
+#header{
+//rozmieszczenie gorne menu
+#szukajka{
+	float:left;
+	width:30%;
+padding-left: 100px;
+}
+
+#top_menu{
+	float:right;
+	width:70%;
+	text-align: right;
+}
+
+#header_prawo{
+	// padding-top: 22px;
+	padding-top: 15px;
+}
+
+
+
+}
+
+//rozmieszczenie dolne menu
+#slider{
+.wrapper{
+	position:relative;
+}
+
+.menu-2{
+
+	width: 100%;
+	position:absolute;
+	bottom:0px;
+
+	li{
+		float:left;
+		text-align:center;
+		&#sport{
+			width:33%;
+		}
+		&#podroze{
+			width:34%;
+		}
+		&#rozwoj{
+			width:33%;
+		}
+		
+	}
+
+}
+
+}
+
+
+//styl górne menu
+
+#spolecznosciowe{
+
+// margin-bottom: 15px;
+margin-bottom: 5px;
+
+a{
+margin-left:10px;
+}
+
+// a:before{
+// 	font-family:FontAwesome;
+// 	padding-right:10px;
+// 	font-weight:400;	
+// }
+
+// .facebook:before{
+// 	content:'\f230';
+// 	color:#3b5998;
+// }	
+
+// .youtube:before{
+// 	content:'\f16a';
+// 	color:#C71D20;
+// }	
+
+// .instagram:before{
+// 	content:'\f16d';
+// 	color:#936446;
+// }	
+
+}
+
+#header a{
+	color:rgba(0,0,0,0.8);
+	font-weight:400;
+	transition:0.3s ease;
+	&:hover{
+		color: #1095DA;
+	}
+}
+
+
+
+.menu-1{
+	text-transform:uppercase;
+	li{
+		margin-left: 28px;
+	}
+}
+
+
+#top_menu{
+	// margin-right:50px;
+}
+//styl szukajka
+
+#search-form{
+	button{
+height: 31px;
+		background-color: #90cf1c;
+border: 1px solid #d7d7d7;
+	position: absolute;
+top: 0px;
+right: 0px;
+
+
+	}
+
+	input{
+		border: 1px solid #D7D7D7;
+		border-right:0px;
+
+		position: absolute;
+top: 0px;
+height: 31px;
+padding-left: 10px;
+padding-right:10px;
+	}
+	fieldset{
+		position: relative;
+width: 192px;
+	}
+}
+
+
+#szukajka{
+
+}
+
+//styl dolne menu
+
+
+.menu-2{
+
+li{
+	// padding:7px 0px;
+	transition:0.5s ease;
+}
+a{
+	color:white;
+	padding:7px 0px;
+	width:100%;
+	display: inline-block;
+font-weight: 400;
+font-size: 1.2em;
+}
+
+	#sport{
+		background-color:rgba(212, 227, 140,0.8);
+		&:hover{
+					background-color:rgba(212, 227, 140,1);
+		}
+		// span:before{
+
+  //   content:url('img/sport.png');
+  //   padding-right:10px;
+
+		// }
+	}
+	#podroze{
+		background-color: rgba(140, 214, 227,0.8);
+		&:hover{
+					background-color: rgba(140, 214, 227,1);
+		}
+
+	// span:before{
+
+ //    content:url('img/podroze.png');
+ //    padding-right:10px;
+
+	// 	}
+
+	}
+	#rozwoj{
+		background-color: rgba(227, 140, 160,0.8);
+		&:hover{
+					background-color: rgba(227, 140, 160,1);
+		}
+
+	// span:before{
+
+ //    content:url('img/rozwoj.png');
+ //    padding-right:10px;
+
+	// 	}
+
+
+	}
+
+//ruchome obrazki
+img{
+	padding-right:10px;
+	position:relative;
+}
+overflow:hidden;
+
+}
+
+
+#spolecznosciowe img{
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	transition:0.2s ease;
+	&:hover{
+		filter:none;
+		-webkit-filter: none;
+	}
+}
+
+//przyklejone spolecznosciowe
+
+#spolecznosciowe{
+	position:absolute;
+	top:-2px;
+	right:0px;
+
+	img{
+		width: 25px;
+		border-bottom-left-radius:3px;
+				border-bottom-right-radius:3px;
+				&#searchicon{
+margin-right: 3px;
+					cursor:pointer;
+				}
+
+
+	}
+}
+
+#header .zawartosc{
+	position: relative;
+}
+
+#header #header_prawo {
+    padding-top: 45px;
+}
+
+#wysuwana_szukajka{
+position:absolute;
+top:-50px;
+right:235px;
+z-index: 10;
+
+#sSearch{
+	padding: 5px;
+width: 280px;
+border: 1px solid #B0B0B0;
+}
+padding: 7px;
+background-color: rgba(0,0,0,0.2);
+
+}
+
+.szukajhover{
+		filter:none !important;
+		-webkit-filter: none !important;
+		}
+
+#spolecznosciowe .jezyk img{
+filter: none;
+-webkit-filter: none;
+border-radius: 3px;
+}
+
+#spolecznosciowe .jezyk.pl img{
+	border: 1px solid #B6B6B6;
+width: 27px;
+height: 25px;
+
+}
+
+#spolecznosciowe .jezyk.en img{
+width: 27px;
+height: 23px;
+}

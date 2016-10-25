@@ -1,0 +1,8 @@
+Options -Indexes
+Options +FollowSymLinks 
+<IfModule mod_rewrite.c>
+RewriteEngine On 
+RewriteRule ^.*,(.*),rss\.xml index.php?,$1,xml [QSA]
+RewriteRule ^sitemap\.xml index.php?p=xml-sitemap [QSA]
+RewriteRule ^([^\/]*)\.html index.php?$1 [QSA]
+</IfModule>

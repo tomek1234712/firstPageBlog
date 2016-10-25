@@ -1,0 +1,194 @@
+// ZMIENNE
+
+$szerokosc: 1200px;
+$czcionka: 'Open Sans';
+$kolor-back-to-top: black;
+$kolor-calosc:white;
+$kolor-wewnatrz:white;
+$kolor-link:tomato;
+
+$padding-zawartosc:20px;
+
+
+
+
+@mixin clearfix(){
+		  content: "";
+		  display: table;
+		  clear: both;
+}
+
+
+
+//IMPORTUJ
+
+@import 'style/quick';
+@import 'style/projekt';
+@import 'style/top';
+@import 'style/footer';
+@import 'style/lista';
+@import 'style/artykul';
+
+
+
+
+// OGÓLNE
+
+
+
+*{
+	box-sizing:border-box;
+}
+
+//kursor strzalka na wszystko oprocz linka
+p, div, li{
+	cursor:default;
+}
+button,a, input.submit{
+	cursor:pointer;
+}
+
+////////////////////////////////////
+
+
+//selekcja
+
+// /* WebKit/Blink Browsers */
+// ::selection {
+//   background: #ffb7b7; 
+//   color:green;
+// }
+
+// /* Gecko Browsers */
+
+// ::-moz-selection {
+//   background: #ffb7b7; 
+//   color:green;
+// }
+
+
+
+
+//////////////////////////////
+
+
+ul,p{
+	margin:0px;
+}
+
+ul{
+	list-style:none;
+	padding:0px;
+}
+
+body{
+	font-family: $czcionka;
+	background-color: $kolor-calosc;
+
+	margin:0px;
+}
+
+
+.wrapper{
+	width: $szerokosc;
+	margin: 0px auto;
+}
+
+
+a, a:visited{
+	text-decoration:none;
+	font-weight:600;
+	// color:$kolor-link;
+}
+
+#container{
+	#header, #slider, #page, #footer, #powered{
+		width:100%;
+
+	@include clearfix();
+
+
+	}
+}
+
+
+#header, #slider, #page, #wrapper, #footer, #powered{
+.zawartosc{
+// background-color: $kolor-wewnatrz;
+width:100%;
+@include clearfix();
+
+}	
+}
+
+
+.zawartosc{
+	// padding:$padding-zawartosc;
+}
+#slider, #header{
+	.zawartosc{
+		padding:0px;
+	}
+}
+
+
+
+
+//  header
+#header_lewo{
+
+	float:left;
+	width:30%
+}
+ #header_prawo{
+
+ 		float:left;
+	width:70%
+ }
+
+
+
+
+
+// menu glowne
+
+.menu-1{
+		list-style:none;
+		padding:0px;
+		text-align: right;
+			li{
+
+				display:inline;
+				// margin-left: 18px;
+			}
+			ul{
+
+				padding-left:0px;
+			}
+}
+
+
+// stylowanie grup widgetow
+
+@for $i from 1 through 10 {
+    
+
+    #widget-#{$i} {
+      list-style:none;
+    }
+}
+
+
+
+
+// ARTYKUL
+
+#page .content {
+ul
+{
+	list-style: disc;
+}
+p{
+	padding-bottom:10px;
+}
+}

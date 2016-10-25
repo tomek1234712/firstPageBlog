@@ -1,0 +1,2 @@
+More information about license:
+http://www.phpconcept.net/pclzip/
